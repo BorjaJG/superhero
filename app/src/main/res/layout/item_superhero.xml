@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivSuperhero"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/superhero_image" />
+
+        <TextView
+            android:id="@+id/tvSuperheroName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:text="Superhero Name"
+            app:layout_constraintStart_toEndOf="@id/ivSuperhero"
+            app:layout_constraintTop_toTopOf="@id/ivSuperhero" />
+
+        <TextView
+            android:id="@+id/tvIntelligence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Intelligence: 100"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            app:layout_constraintStart_toStartOf="@id/tvSuperheroName"
+            app:layout_constraintTop_toBottomOf="@id/tvSuperheroName" />
+
+        <TextView
+            android:id="@+id/tvStrength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Strength: 100"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            app:layout_constraintStart_toStartOf="@id/tvIntelligence"
+            app:layout_constraintTop_toBottomOf="@id/tvIntelligence" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Speed: 100"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            app:layout_constraintStart_toStartOf="@id/tvStrength"
+            app:layout_constraintTop_toBottomOf="@id/tvStrength" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">superhero</string>
+    <string name="superheroes_file_xml">superheroes</string>
+    <string name="intelligence_format">Intelligence: %d</string>
+    <string name="strength_format">Strength: %d</string>
+    <string name="speed_format">Speed: %d</string>
+    <string name="superhero_image">Superhero image</string>
+    <string name="text_share_title">texto??</string>
+    <string name="text_sharing_message">1</string>
+    <!-- Errores Generales -->
+    <string name="title_error">Título del error</string>
+    <string name="description_error">Descripción del error</string>
+    <string name="button_retry">Reintentar</string>
+
+    <!-- Error de Conexión -->
+    <string name="title_error_connection">Error en la conexión</string>
+    <string name="description_error_connection">Error en la conexión a internet. Verifique y vuelva a intentarlo más tarde</string>
+    <string name="button_retry_connection">Reintentar</string>
+
+    <!-- Error del Servidor -->
+    <string name="title_error_server">Error en el servidor</string>
+    <string name="description_error_server">Ocurrió un error relacionado con la conexión del servidor</string>
+
+    <!-- Error Desconocido -->
+    <string name="title_error_unknown">Error desconocido</string>
+    <string name="description_error_unknown">Se está produciendo un error desconocido
+    en el sistema</string>
 </resources>
