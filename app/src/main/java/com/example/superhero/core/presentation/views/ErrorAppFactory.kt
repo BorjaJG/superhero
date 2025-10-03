@@ -1,0 +1,21 @@
+package com.example.superhero.core.presentation.views
+
+import android.content.Context
+import com.example.superhero.core.domain.ErrorApp
+import org.koin.core.annotation.Single
+
+
+@Single
+class ErrorAppFactory(val context: Context) {
+
+    fun build(errorApp: ErrorApp, onClick: (() -> Unit)): ErrorAppUI {
+        return when (errorApp) {
+            ErrorApp.DataErrorApp -> ServerErrorAppUI(context, onClick)
+            ErrorApp.DataExpiredError -> ConnectionErrorAppUI(context, onClick)
+            ErrorApp.InternetErrorApp -> ConnectionErrorAppUI(context, onClick)
+            ErrorApp.ServerErrorApp -> ServerErrorAppUI(context, onClick)
+            ErrorApp.UnknowErrorApp -> UnknownErrorAppUI(context, onClick)
+            ErrorApp.InvalidCredentialsError -> TODO()
+        }
+    }
+}
